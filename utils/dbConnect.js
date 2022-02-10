@@ -13,7 +13,7 @@ const dbConnect = async () => {
   })
 
   connection.isConnected = db.connections[0].readyState
-  console.log(connection.isConnected)
+  console.error(connection.isConnected)
 }
 
 export default dbConnect
